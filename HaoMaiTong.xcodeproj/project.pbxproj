@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8B64112B238B859C0049FD25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64112A238B859C0049FD25 /* AppDelegate.m */; };
-		8B64112E238B859C0049FD25 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64112D238B859C0049FD25 /* SceneDelegate.m */; };
 		8B641131238B859C0049FD25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B641130238B859C0049FD25 /* ViewController.m */; };
 		8B641134238B859C0049FD25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B641132238B859C0049FD25 /* Main.storyboard */; };
 		8B641136238B859D0049FD25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B641135238B859D0049FD25 /* Assets.xcassets */; };
@@ -16,6 +15,11 @@
 		8B64113C238B859D0049FD25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64113B238B859D0049FD25 /* main.m */; };
 		8B641146238B859E0049FD25 /* HaoMaiTongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B641145238B859E0049FD25 /* HaoMaiTongTests.m */; };
 		8B641151238B859E0049FD25 /* HaoMaiTongUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B641150238B859E0049FD25 /* HaoMaiTongUITests.m */; };
+		8B641163238CCFD40049FD25 /* UIFont+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B64115F238CCFD30049FD25 /* UIFont+runtime.m */; };
+		8B641164238CCFD40049FD25 /* UIButton+DalaySwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B641161238CCFD40049FD25 /* UIButton+DalaySwizzling.m */; };
+		8B641167238CD24F0049FD25 /* ALinNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B641165238CD24F0049FD25 /* ALinNetworkTool.m */; };
+		8B64116A238CD33D0049FD25 /* PersonnerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B641168238CD33D0049FD25 /* PersonnerModel.m */; };
+		CC85D76F28400807F1148E7C /* Pods_HaoMaiTong.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697539C396A3A15BA01E7132 /* Pods_HaoMaiTong.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		697539C396A3A15BA01E7132 /* Pods_HaoMaiTong.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaoMaiTong.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B641126238B859C0049FD25 /* HaoMaiTong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaoMaiTong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B641129238B859C0049FD25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B64112A238B859C0049FD25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8B64112C238B859C0049FD25 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		8B64112D238B859C0049FD25 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		8B64112F238B859C0049FD25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8B641130238B859C0049FD25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8B641133238B859C0049FD25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +57,17 @@
 		8B64114C238B859E0049FD25 /* HaoMaiTongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HaoMaiTongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B641150238B859E0049FD25 /* HaoMaiTongUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaoMaiTongUITests.m; sourceTree = "<group>"; };
 		8B641152238B859E0049FD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B64115E238BBB270049FD25 /* HMTPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMTPrefixHeader.pch; sourceTree = "<group>"; };
+		8B64115F238CCFD30049FD25 /* UIFont+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+runtime.m"; sourceTree = "<group>"; };
+		8B641160238CCFD40049FD25 /* UIButton+DalaySwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DalaySwizzling.h"; sourceTree = "<group>"; };
+		8B641161238CCFD40049FD25 /* UIButton+DalaySwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DalaySwizzling.m"; sourceTree = "<group>"; };
+		8B641162238CCFD40049FD25 /* UIFont+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+runtime.h"; sourceTree = "<group>"; };
+		8B641165238CD24F0049FD25 /* ALinNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALinNetworkTool.m; sourceTree = "<group>"; };
+		8B641166238CD24F0049FD25 /* ALinNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALinNetworkTool.h; sourceTree = "<group>"; };
+		8B641168238CD33D0049FD25 /* PersonnerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonnerModel.m; sourceTree = "<group>"; };
+		8B641169238CD33D0049FD25 /* PersonnerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonnerModel.h; sourceTree = "<group>"; };
+		92092FCEBCAEF2FA32114FA2 /* Pods-HaoMaiTong.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaoMaiTong.debug.xcconfig"; path = "Target Support Files/Pods-HaoMaiTong/Pods-HaoMaiTong.debug.xcconfig"; sourceTree = "<group>"; };
+		FAE7F12BF6DC112DC5E8537D /* Pods-HaoMaiTong.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaoMaiTong.release.xcconfig"; path = "Target Support Files/Pods-HaoMaiTong/Pods-HaoMaiTong.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC85D76F28400807F1148E7C /* Pods_HaoMaiTong.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,8 @@
 				8B641144238B859E0049FD25 /* HaoMaiTongTests */,
 				8B64114F238B859E0049FD25 /* HaoMaiTongUITests */,
 				8B641127238B859C0049FD25 /* Products */,
+				FC07CDC70F88BEB427D9587B /* Pods */,
+				B0E070A407F75C1329E2ADAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,10 +123,17 @@
 			children = (
 				8B641129238B859C0049FD25 /* AppDelegate.h */,
 				8B64112A238B859C0049FD25 /* AppDelegate.m */,
-				8B64112C238B859C0049FD25 /* SceneDelegate.h */,
-				8B64112D238B859C0049FD25 /* SceneDelegate.m */,
 				8B64112F238B859C0049FD25 /* ViewController.h */,
 				8B641130238B859C0049FD25 /* ViewController.m */,
+				8B641160238CCFD40049FD25 /* UIButton+DalaySwizzling.h */,
+				8B641161238CCFD40049FD25 /* UIButton+DalaySwizzling.m */,
+				8B641162238CCFD40049FD25 /* UIFont+runtime.h */,
+				8B64115F238CCFD30049FD25 /* UIFont+runtime.m */,
+				8B641166238CD24F0049FD25 /* ALinNetworkTool.h */,
+				8B641165238CD24F0049FD25 /* ALinNetworkTool.m */,
+				8B641169238CD33D0049FD25 /* PersonnerModel.h */,
+				8B641168238CD33D0049FD25 /* PersonnerModel.m */,
+				8B64115E238BBB270049FD25 /* HMTPrefixHeader.pch */,
 				8B641132238B859C0049FD25 /* Main.storyboard */,
 				8B641135238B859D0049FD25 /* Assets.xcassets */,
 				8B641137238B859D0049FD25 /* LaunchScreen.storyboard */,
@@ -137,6 +161,23 @@
 			path = HaoMaiTongUITests;
 			sourceTree = "<group>";
 		};
+		B0E070A407F75C1329E2ADAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				697539C396A3A15BA01E7132 /* Pods_HaoMaiTong.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC07CDC70F88BEB427D9587B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92092FCEBCAEF2FA32114FA2 /* Pods-HaoMaiTong.debug.xcconfig */,
+				FAE7F12BF6DC112DC5E8537D /* Pods-HaoMaiTong.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B641155238B859E0049FD25 /* Build configuration list for PBXNativeTarget "HaoMaiTong" */;
 			buildPhases = (
+				705979F8364EA7A7D55F7B7C /* [CP] Check Pods Manifest.lock */,
 				8B641122238B859C0049FD25 /* Sources */,
 				8B641123238B859C0049FD25 /* Frameworks */,
 				8B641124238B859C0049FD25 /* Resources */,
+				BFD491FF026EE20F7F9E96ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,15 +305,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		705979F8364EA7A7D55F7B7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HaoMaiTong-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFD491FF026EE20F7F9E96ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaoMaiTong/Pods-HaoMaiTong-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HaoMaiTong/Pods-HaoMaiTong-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HaoMaiTong/Pods-HaoMaiTong-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B641122238B859C0049FD25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B641167238CD24F0049FD25 /* ALinNetworkTool.m in Sources */,
 				8B641131238B859C0049FD25 /* ViewController.m in Sources */,
+				8B64116A238CD33D0049FD25 /* PersonnerModel.m in Sources */,
 				8B64112B238B859C0049FD25 /* AppDelegate.m in Sources */,
 				8B64113C238B859D0049FD25 /* main.m in Sources */,
-				8B64112E238B859C0049FD25 /* SceneDelegate.m in Sources */,
+				8B641163238CCFD40049FD25 /* UIFont+runtime.m in Sources */,
+				8B641164238CCFD40049FD25 /* UIButton+DalaySwizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,9 +525,12 @@
 		};
 		8B641156238B859E0049FD25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92092FCEBCAEF2FA32114FA2 /* Pods-HaoMaiTong.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HaoMaiTong/HMTPrefixHeader.pch";
 				INFOPLIST_FILE = HaoMaiTong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,9 +544,12 @@
 		};
 		8B641157238B859E0049FD25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE7F12BF6DC112DC5E8537D /* Pods-HaoMaiTong.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HaoMaiTong/HMTPrefixHeader.pch";
 				INFOPLIST_FILE = HaoMaiTong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

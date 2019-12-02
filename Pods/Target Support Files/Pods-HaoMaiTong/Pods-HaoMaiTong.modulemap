@@ -1,0 +1,6 @@
+framework module Pods_HaoMaiTong {
+  umbrella header "Pods-HaoMaiTong-umbrella.h"
+
+  export *
+  module * { export * }
+}
